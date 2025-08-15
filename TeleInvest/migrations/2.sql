@@ -1,0 +1,13 @@
+
+CREATE TABLE investments (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id TEXT NOT NULL,
+  channel_id INTEGER NOT NULL,
+  shares_owned INTEGER NOT NULL,
+  total_invested REAL NOT NULL,
+  current_value REAL DEFAULT 0.0,
+  total_earnings REAL DEFAULT 0.0,
+  purchase_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

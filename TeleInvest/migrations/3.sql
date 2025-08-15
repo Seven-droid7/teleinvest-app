@@ -1,0 +1,11 @@
+
+CREATE TABLE user_profiles (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id TEXT NOT NULL UNIQUE,
+  investor_level INTEGER DEFAULT 1,
+  total_invested REAL DEFAULT 0.0,
+  total_earnings REAL DEFAULT 0.0,
+  portfolio_value REAL DEFAULT 0.0,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
